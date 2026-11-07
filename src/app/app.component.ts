@@ -33,7 +33,7 @@ export class AppComponent {
   dizerSim() {
     this.aceitou = true;
     // Envia a confirmação para o servidor Python
-    this.http.post('http://localhost:5000/api/aceitou', {}).subscribe({
+    this.http.post('https://pedido-angela.onrender.com/api/aceitou', {}).subscribe({
       next: (resposta) => console.log('Salvo no Python:', resposta),
       error: (erro) => console.error('Erro na API:', erro)
     });
