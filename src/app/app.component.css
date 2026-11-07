@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe6e6;
+  text-align: center;
+}
+
+h1 {
+  color: #d32f2f;
+  margin-bottom: 30px;
+}
+
+.botoes-wrapper {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.btn {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.sim {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sim:hover {
+  background-color: #45a049;
+}
+
+.nao {
+  background-color: #f44336;
+  color: white;
+  /* A transição suave faz o botão parecer "deslizar" ao fugir */
+  transition: top 0.2s, left 0.2s; 
+}
+
+.comemoracao h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.coracao-gigante {
+  font-size: 8rem;
+  animation: pulsar 1s infinite alternate;
+}
+
+@keyframes pulsar {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}

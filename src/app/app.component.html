@@ -1,0 +1,18 @@
+<div class="container" *ngIf="!aceitou">
+  <h1>Ângela, quer casar comigo?</h1>
+  
+  <div class="botoes-wrapper">
+    <button class="btn sim" (click)="dizerSim()">Sim</button>
+    
+    <button class="btn nao" 
+            [ngStyle]="estiloBotaoNao" 
+            (mouseenter)="fugir()" 
+            (click)="fugir()">Não</button>
+  </div>
+</div>
+
+<div class="container comemoracao" *ngIf="aceitou">
+  <div class="coracao-gigante">❤️</div>
+  <h1>Eu também te amo!</h1>
+  <p>Com amor, Tiago.</p>
+</div>
